@@ -73,3 +73,4 @@ C:\Users\matsf\source\repos\WebApplicationReal\WebApplicationReal\obj\Debug\WebA
 C:\Users\matsf\source\repos\WebApplicationReal\WebApplicationReal\obj\Debug\WebApplicationReal.csproj.CopyComplete
 C:\Users\matsf\source\repos\WebApplicationReal\WebApplicationReal\obj\Debug\WebApplicationReal.dll
 C:\Users\matsf\source\repos\WebApplicationReal\WebApplicationReal\obj\Debug\WebApplicationReal.pdb
+C:\Users\matsf\source\repos\WebApplicationReal\WebApplicationReal\obj\Debug\WebApplicationReal.csproj.CoreCompileInputs.cache

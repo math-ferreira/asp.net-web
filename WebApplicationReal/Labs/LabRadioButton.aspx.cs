@@ -8,7 +8,7 @@ using System.Web.UI.WebControls;
 
 namespace WebApplicationReal
 {
-    public partial class Lab1 : System.Web.UI.Page
+    public partial class LabRadioButton : Page
     {
         private NOMQBS simulaTransacao;
         

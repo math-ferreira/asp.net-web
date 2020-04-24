@@ -105,14 +105,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
-    <Content Include="Contact.aspx" />
+    <Content Include="Labs\About.aspx" />
+    <Content Include="Labs\Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="Default.aspx" />
+    <Content Include="Labs\Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -125,7 +125,9 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
-    <Content Include="Lab.aspx" />
+    <Content Include="Labs\ExtracaoRelatorio.aspx" />
+    <Content Include="Labs\LabRadioButton.aspx" />
+    <Content Include="Labs\ManipulacaoBotoes.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -162,38 +164,52 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
+    <Compile Include="Labs\About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="About.aspx.designer.cs">
+    <Compile Include="Labs\About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Labs\ExtracaoRelatorio.aspx.cs">
+      <DependentUpon>ExtracaoRelatorio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Labs\ExtracaoRelatorio.aspx.designer.cs">
+      <DependentUpon>ExtracaoRelatorio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Labs\ManipulacaoBotoes.aspx.cs">
+      <DependentUpon>ManipulacaoBotoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Labs\ManipulacaoBotoes.aspx.designer.cs">
+      <DependentUpon>ManipulacaoBotoes.aspx</DependentUpon>
+    </Compile>
     <Compile Include="NOMQBS.cs" />
-    <Compile Include="Contact.aspx.cs">
+    <Compile Include="Labs\Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
+    <Compile Include="Labs\Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
+    <Compile Include="Labs\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
+    <Compile Include="Labs\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Lab.aspx.cs">
-      <DependentUpon>Lab.aspx</DependentUpon>
+    <Compile Include="Labs\LabRadioButton.aspx.cs">
+      <DependentUpon>LabRadioButton.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Lab.aspx.designer.cs">
-      <DependentUpon>Lab.aspx</DependentUpon>
+    <Compile Include="Labs\LabRadioButton.aspx.designer.cs">
+      <DependentUpon>LabRadioButton.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

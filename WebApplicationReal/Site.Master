@@ -31,10 +31,12 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Página inicial</a></li>
-                        <li><a runat="server" href="~/About">Sobre</a></li>
-                        <li><a runat="server" href="~/Contact">Contato</a></li>
-                        <li><a runat="server" href="Lab.aspx">Laboratorio</a></li>
+                        <li><a runat="server" href="~/Labs/Default">Página inicial</a></li>
+                        <li><a runat="server" href="~/Labs/About">Sobre</a></li>
+                        <li><a runat="server" href="~/Labs/Contact">Contato</a></li>
+                        <li><a runat="server" href="~/Labs/LabRadioButton">RadioButton</a></li>
+                        <li><a runat="server" href="~/Labs/ManipulacaoBotoes">Botoes</a></li>
+                        <li><a runat="server" href="~/Labs/ExtracaoRelatorio">Extrair arquivos</a></li>
                     </ul>
                 </div>
             </div>
