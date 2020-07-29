@@ -37,6 +37,7 @@
                         <li><a runat="server" href="~/Labs/LabRadioButton">RadioButton</a></li>
                         <li><a runat="server" href="~/Labs/ManipulacaoBotoes">Botoes</a></li>
                         <li><a runat="server" href="~/Labs/ExtracaoRelatorio">Extrair arquivos</a></li>
+                         <li><a runat="server" href="~/Labs/Cache">Cache</a></li>
                     </ul>
                 </div>
             </div>

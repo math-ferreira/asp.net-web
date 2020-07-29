@@ -15,18 +15,10 @@ namespace WebApplicationReal.Labs
         }
         public void ExportListFromGridView(Object sender, EventArgs e)
         {
-            var data;
+ 
             if (rbEmAnalise.Checked)
             {
-                data = new[]{
-                        new{ NumeroProposta="Ram", NomeCliente="ram@techbrij.com", EmAnalise="true", ParaAnalise="false" }
-               };
-            }
-            else
-            {
-                data = new[]{
-                        new{ NumeroProposta="Ram", NomeCliente="ram@techbrij.com", EmAnalise="false", ParaAnalise="true" }
-               };
+     
             }
 
             Response.ClearContent();

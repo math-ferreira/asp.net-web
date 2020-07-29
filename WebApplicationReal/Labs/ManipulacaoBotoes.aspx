@@ -19,4 +19,10 @@
     <asp:Button ID="btn2" ForeColor="black" runat="server" OnClick="btn2_Click" Text="Botão 2 - via .cs" /><p></p>
     <asp:Button ID="btn3" ForeColor="black" runat="server" OnClick="btn3_Click" Text="Botão 3 - via .cs e .js" /><p></p>
     <asp:Button ID="btn4" ForeColor="black" runat="server" OnClientClick="return functionBtn4()" Text="Botão 4 - via .js" /><p></p>
+    <asp:Button ID="btnExibirConteudo" ForeColor="black" runat="server" OnClick="btn_Baixar" Text="Baixar arquivo no Servidor" /><p></p>
+    <asp:Button ID="btnsession" ForeColor="black" runat="server" OnClick="btn_Session" Text="Botão - variavel de sessão (Session)" /><p></p>
+    <asp:Button ID="btncache1" ForeColor="black" runat="server" OnClick="btn_Cache_HTTPContext" Text="Botão - cache HTTP Context" /><p></p>
+    <asp:Button ID="btncache2" ForeColor="black" runat="server" OnClick="btn_Cache_HTTPRuntime" Text="Botão - cache HTTP Runtime" /><p></p>
+    <p></p>
+    <p></p>
 </asp:Content>
