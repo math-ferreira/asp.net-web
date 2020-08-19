@@ -43,6 +43,11 @@ namespace WebApplicationReal.Labs
 
         public void btn_Baixar(Object sender, EventArgs e)
         {
+            teste_arquivo("testeMath", DateTime.Now);
+        }
+
+        public void teste_arquivo(String textoCache, DateTime dateTime)
+        {
             string path = HttpContext.Current.Server.MapPath("~//files");
             IEnumerable<string> filesIni = System.IO.Directory.EnumerateFiles(path,
                                                   "*.*",
@@ -57,7 +62,7 @@ namespace WebApplicationReal.Labs
             {
                 var files = from file in Directory.EnumerateFiles(path, "*.*", SearchOption.AllDirectories)
                             from line in File.ReadLines(file)
-                                // where line.Contains("Microsoft")
+
                             select new
                             {
                                 File = file,
@@ -80,25 +85,25 @@ namespace WebApplicationReal.Labs
             }
 
             // Verifica se ja existe o arquivo em path
-            path = HttpContext.Current.Server.MapPath("~//files//parceiros.txt");
+            path = HttpContext.Current.Server.MapPath("~//files//cache.txt");
             // This text is added only once to the file.
             if (!File.Exists(path))
             {
-                // Create a file to write to.
-                string createText = "Hello and Welcome" + Environment.NewLine;
+                string createText = "ARQUIVO COMEÇA AQUI:  ";
                 File.WriteAllText(path, createText);
             }
 
             // This text is always added, making the file longer over time
             // if it is not deleted.
-            string appendText = "\nThis is extra text" + Environment.NewLine;
+            string appendText = "Texto: " + textoCache + " e dateTime: " + dateTime + " - ";
             File.AppendAllText(path, appendText);
 
             // Open the file to read from.
             string readText = File.ReadAllText(path);
+            String console = "console.log('" + readText + "');";
+            Page.ClientScript.RegisterStartupScript(this.GetType(), "ErrorAlert", console, true);
             Console.WriteLine(readText);
         }
-
 
         public void btn_Session(Object sender, EventArgs e)
         {
@@ -147,6 +152,11 @@ namespace WebApplicationReal.Labs
             if (cachedString == null)
             {
                 HttpRuntime.Cache.Insert("chave2", "Objeto no Cache 2");
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "ErrorAlert", "console.log('NÃO tem cache');", true);
+
+            } else
+            {
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "ErrorAlert", "console.log('TEM cache');", true);
             }
 
             Debug.WriteLine("Aqui a chave 2: " + HttpRuntime.Cache.Get("chave2"));

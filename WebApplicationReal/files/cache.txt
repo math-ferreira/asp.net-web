@@ -1,0 +1,1 @@
+ARQUIVO COMEÇA AQUI:  Texto: testeMath e dateTime: 18/08/2020 21:35:03 - Texto: testeMath e dateTime: 18/08/2020 21:35:05 - Texto: testeMath e dateTime: 18/08/2020 21:36:01 - 
